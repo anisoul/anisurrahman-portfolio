@@ -64,10 +64,13 @@ Effects (all built here from scratch, no outside code):
    public repo, e.g. `anisurrahman-portfolio`, and upload this folder's contents.
 2. Vercel (free Hobby plan, $0, no card): sign in with GitHub → Add New →
    Project → Import the repo. Framework preset: **Other** (static site, no
-   build command, no output directory change). Project name: **anisurrahman**
-   → https://anisurrahman.vercel.app (if Vercel says the name is taken, use
-   `anisurrahman-marketing` instead, update `BASE` in `build.py`, re-run it,
-   and push again — sitemap, canonical links and schema all use it).
+   build command, no output directory change). Project name:
+   **anisurrahman-marketing** → https://anisurrahman-marketing.vercel.app
+   (`anisurrahman.vercel.app` was taken by another site, 2026-11-17; the
+   project was first deployed as `anisurrahman-ten`, then renamed. If Vercel
+   says a name is taken, stop and report — do not pick another name. After a
+   rename, update `BASE` in `build.py`, re-run it, and push again — sitemap,
+   canonical links and schema all use it).
 3. Verify live: open the home page (card drops, drag works, lens lines up,
    cursor ring follows, all links work); check `…/sitemap.xml` returns XML;
    paste the home page into Google's Rich Results Test for the schema;

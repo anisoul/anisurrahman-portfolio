@@ -7,7 +7,8 @@ verified live updates (Contact, About Training, 6 Reels).
 
 This version is the dark premium design Anisur asked for on 2026-11-17:
 fancy effects YES, maroon-suit photo YES, title 'Digital Marketer |
-Founder, Veneer Monet', site link anisurrahman.vercel.app if available.
+Founder, Veneer Monet', site link anisurrahman-marketing.vercel.app
+(anisurrahman.vercel.app is taken by another site).
 
 Effects (all built here from scratch, no outside code):
 - Hanging ID card with Verlet-rope physics (script.js), photo me-card.webp.
@@ -32,7 +33,7 @@ sitemap.xml. script.js and assets/ are hand-written and not touched.
 import os
 
 OUT = os.path.expanduser("~/workspace/nsda-level4-portfolio/vercel-rebuild")
-BASE = "https://anisurrahman.vercel.app"  # Vercel project name 'anisurrahman'; confirm on first deploy
+BASE = "https://anisurrahman-marketing.vercel.app"  # Vercel project name 'anisurrahman-marketing' (anisurrahman.vercel.app is taken by another site)
 META = ("Digital marketer from Bangladesh. Local SEO, Google Business Profile, "
         "email marketing, YouTube marketing and Google Ads — with real work on "
         "Pinterest, Gumroad, Instagram and Facebook.")
@@ -99,7 +100,7 @@ SCHEMA = """<script type="application/ld+json">
   "name": "Md. Anisur Rahman",
   "description": "Digital marketing freelancer in Cumilla, Bangladesh — local SEO, Google Business Profile, Search Console and Analytics, email marketing and video marketing.",
   "telephone": "+8801577809069",
-  "url": "https://anisurrahman.vercel.app",
+  "url": "https://anisurrahman-marketing.vercel.app",
   "address": {"@type": "PostalAddress", "addressLocality": "Cumilla", "addressCountry": "BD"},
   "areaServed": "Cumilla, Bangladesh",
   "knowsAbout": ["Local SEO", "Google Business Profile", "Google Search Console", "Google Analytics", "Email Marketing", "Video Marketing"],
@@ -169,7 +170,7 @@ footer a{color:var(--body)}
 .idcard .top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em}
 .idcard .rec{color:var(--accent);font-weight:700}
 .idcard .photo{position:relative;margin:12px 0 10px;border-radius:10px;overflow:hidden}
-.idcard .photo img{display:block;width:100%;height:210px;object-fit:cover;object-position:top}
+.idcard .photo img{display:block;width:100%;aspect-ratio:1/1;height:auto;object-fit:cover}
 .idcard .photo .c{position:absolute;width:18px;height:18px;border:2px solid #fff}
 .idcard .photo .tl{top:8px;left:8px;border-right:0;border-bottom:0}
 .idcard .photo .tr{top:8px;right:8px;border-left:0;border-bottom:0}
